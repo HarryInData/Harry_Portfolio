@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hari Kishan Singh — Data Analyst & AI Developer</title>
+  <meta name="description" content="Portfolio of Hari Kishan Singh — Data Analyst, AI & ML Enthusiast building intelligent systems and data-driven solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor">
+    <span class="cursor-text" id="cursorText"></span>
+  </div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-logo-letter" style="--i:0">H</span>
+        <span class="loader-logo-letter" style="--i:1">K</span>
+        <span class="loader-logo-letter" style="--i:2">S</span>
+      </div>
+      <div class="loader-text">
+        <span class="loader-label">INITIALIZING PORTFOLIO</span>
+        <span class="loader-dots">...</span>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <div class="loader-percent" id="loaderPercent">0%</div>
+      <div class="loader-commands" id="loaderCommands">
+        <p class="loader-cmd">> loading modules...</p>
+        <p class="loader-cmd">> initializing canvas renderer...</p>
+        <p class="loader-cmd">> fetching data streams...</p>
+        <p class="loader-cmd">> compiling experience...</p>
+        <p class="loader-cmd">> rendering portfolio... <span class="term-green">done ✓</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-logo-text">HKS</span>
+      <span class="nav-logo-dot"></span>
+    </div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link" data-hover data-cursor-text="EXPLORE">About</a>
+      <a href="#projects" class="nav-link" data-hover data-cursor-text="VIEW">Projects</a>
+      <a href="#skills" class="nav-link" data-hover data-cursor-text="DISCOVER">Skills</a>
+      <a href="#experience" class="nav-link" data-hover data-cursor-text="READ">Experience</a>
+      <a href="#contact" class="nav-link" data-hover data-cursor-text="CONNECT">Contact</a>
+    </div>
+    <button class="nav-menu-btn" id="navMenuBtn" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="mainContent">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <canvas id="heroCanvas"></canvas>
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag reveal-up">
+          <span class="hero-tag-line"></span>
+          DATA ANALYST & AI DEVELOPER
+          <span class="hero-tag-line"></span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-line char-reveal" data-delay="0.1">DATA IS CHAOS.</span>
+          <span class="hero-line hero-line-accent char-reveal" data-delay="0.4">I MAKE IT</span>
+          <span class="hero-line char-reveal" data-delay="0.7">MAKE SENSE.</span>
+        </h1>
+        <p class="hero-sub reveal-up" data-delay="1.0">Hari Kishan Singh — New Delhi, India</p>
+        <div class="hero-cta reveal-up" data-delay="1.2">
+          <a href="#projects" class="btn btn-primary magnetic" data-hover data-cursor-text="→">
+            <span class="btn-text">View My Work</span>
+            <span class="btn-fill"></span>
+          </a>
+          <a href="#contact" class="btn btn-outline magnetic" data-hover data-cursor-text="✉">
+            <span class="btn-text">Get in Touch</span>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator reveal-up" data-delay="1.5">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>DATA ANALYTICS</span>
+          <span class="marquee-dot">◆</span>
+          <span>MACHINE LEARNING</span>
+          <span class="marquee-dot">◆</span>
+          <span>ARTIFICIAL INTELLIGENCE</span>
+          <span class="marquee-dot">◆</span>
+          <span>PREDICTIVE MODELING</span>
+          <span class="marquee-dot">◆</span>
+          <span>DATA VISUALIZATION</span>
+          <span class="marquee-dot">◆</span>
+          <span>DEEP LEARNING</span>
+          <span class="marquee-dot">◆</span>
+          <span>DATA ANALYTICS</span>
+          <span class="marquee-dot">◆</span>
+          <span>MACHINE LEARNING</span>
+          <span class="marquee-dot">◆</span>
+          <span>ARTIFICIAL INTELLIGENCE</span>
+          <span class="marquee-dot">◆</span>
+          <span>PREDICTIVE MODELING</span>
+          <span class="marquee-dot">◆</span>
+          <span>DATA VISUALIZATION</span>
+          <span class="marquee-dot">◆</span>
+          <span>DEEP LEARNING</span>
+          <span class="marquee-dot">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">01 / ABOUT</span>
+          <h2 class="section-title reveal-up" data-delay="0.1" data-scramble>The Human Behind<br/>The Data</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text reveal-up" data-delay="0.2">
+            <p class="about-lead">I don't just analyze data — I <em>architect understanding</em> from chaos.</p>
+            <p>I am a BCA student at IMS Ghaziabad passionate about <strong>Data Analytics</strong>, <strong>Machine Learning</strong>, and <strong>AI systems</strong>. I build real-world solutions like dashboards, predictive models, and intelligent systems that turn raw, messy data into actionable insights.</p>
+            <p>My work sits at the intersection of analysis and engineering — I don't just find patterns, I build systems around them.</p>
+          </div>
+          <div class="about-cards">
+            <div class="about-card tilt-card reveal-up" data-delay="0.2">
+              <div class="card-glow"></div>
+              <div class="about-card-icon">📊</div>
+              <h3>Data Analyst</h3>
+              <p>Uncovering patterns and building dashboards that drive decisions.</p>
+              <div class="card-corner card-corner-tl"></div>
+              <div class="card-corner card-corner-br"></div>
+            </div>
+            <div class="about-card tilt-card reveal-up" data-delay="0.3">
+              <div class="card-glow"></div>
+              <div class="about-card-icon">🤖</div>
+              <h3>AI Builder</h3>
+              <p>From predictive models to intelligent agents — building AI that solves real problems.</p>
+              <div class="card-corner card-corner-tl"></div>
+              <div class="card-corner card-corner-br"></div>
+            </div>
+            <div class="about-card tilt-card reveal-up" data-delay="0.4">
+              <div class="card-glow"></div>
+              <div class="about-card-icon">🎓</div>
+              <h3>BCA Student</h3>
+              <p>Currently pursuing my Bachelors in Computer Applications at IMS Ghaziabad.</p>
+              <div class="card-corner card-corner-tl"></div>
+              <div class="card-corner card-corner-br"></div>
+            </div>
+            <div class="about-card tilt-card reveal-up" data-delay="0.5">
+              <div class="card-glow"></div>
+              <div class="about-card-icon">🏆</div>
+              <h3>Hackathon Competitor</h3>
+              <p>Competing, learning, and building under pressure at hackathons.</p>
+              <div class="card-corner card-corner-tl"></div>
+              <div class="card-corner card-corner-br"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal-up" data-delay="0.1">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-item reveal-up" data-delay="0.2">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-item reveal-up" data-delay="0.3">
+            <span class="stat-number" data-count="15">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item reveal-up" data-delay="0.4">
+            <span class="stat-number" data-count="1000">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Lines of Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">02 / PROJECTS</span>
+          <h2 class="section-title reveal-up" data-delay="0.1" data-scramble>Things I've Built</h2>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="project-block reveal-up" data-delay="0.2">
+          <div class="project-number-wrap">
+            <div class="project-number">01</div>
+            <div class="project-line"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name" data-scramble>TeamFit AI</h3>
+            <div class="project-story">
+              <div class="project-phase">
+                <span class="phase-label">THE PROBLEM</span>
+                <p>Group projects are broken. Freeloaders hide behind hardworking teammates, and there's no objective way to measure who actually contributed.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">THE SOLUTION</span>
+                <p>An AI-powered system that detects freeloaders by tracking individual contributions through code commits, task completions, and meeting participation — generating clear accountability dashboards.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">KEY FEATURES</span>
+                <ul class="project-features">
+                  <li>Contribution tracking & scoring</li>
+                  <li>Automated freeloader detection</li>
+                  <li>Dashboard reports & analytics</li>
+                  <li>Team performance visualization</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>Machine Learning</span><span>Dashboard</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-block reveal-up" data-delay="0.2">
+          <div class="project-number-wrap">
+            <div class="project-number">02</div>
+            <div class="project-line"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name" data-scramble>AI BI Dashboard</h3>
+            <div class="project-story">
+              <div class="project-phase">
+                <span class="phase-label">THE PROBLEM</span>
+                <p>Business users need data insights but lack the technical skills to write SQL queries or build complex dashboards from scratch.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">THE SOLUTION</span>
+                <p>A no-code analytics platform powered by AI that automatically generates insights, summaries, and visualizations from uploaded datasets — making BI accessible to anyone.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">KEY FEATURES</span>
+                <ul class="project-features">
+                  <li>No-code data analysis</li>
+                  <li>AI-generated insights & summaries</li>
+                  <li>Auto-visualization engine</li>
+                  <li>Natural language querying</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>AI/LLM</span><span>Business Intelligence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-block reveal-up" data-delay="0.2">
+          <div class="project-number-wrap">
+            <div class="project-number">03</div>
+            <div class="project-line"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name" data-scramble>Emotion-Aware Encryption</h3>
+            <div class="project-story">
+              <div class="project-phase">
+                <span class="phase-label">THE PROBLEM</span>
+                <p>Traditional encryption relies on passwords that can be compromised. Security needs a more human, unforgeable layer of protection.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">THE SOLUTION</span>
+                <p>A system that uses facial expression recognition as a biometric key for data encryption — your emotions become your password.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">KEY FEATURES</span>
+                <ul class="project-features">
+                  <li>Facial expression recognition</li>
+                  <li>Emotion-based key generation</li>
+                  <li>Real-time encryption/decryption</li>
+                  <li>Multi-layer biometric security</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>Computer Vision</span><span>Cryptography</span><span>Deep Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-block reveal-up" data-delay="0.2">
+          <div class="project-number-wrap">
+            <div class="project-number">04</div>
+            <div class="project-line"></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name" data-scramble>Customer Churn Prediction</h3>
+            <div class="project-story">
+              <div class="project-phase">
+                <span class="phase-label">THE PROBLEM</span>
+                <p>Companies lose millions to customer attrition without understanding why or when customers leave.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">THE SOLUTION</span>
+                <p>A machine learning model that predicts which customers are about to churn, enabling proactive retention strategies before it's too late.</p>
+              </div>
+              <div class="project-phase">
+                <span class="phase-label">KEY FEATURES</span>
+                <ul class="project-features">
+                  <li>Predictive churn modeling</li>
+                  <li>Feature importance analysis</li>
+                  <li>Customer segmentation</li>
+                  <li>Retention recommendation engine</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-learn</span><span>Predictive Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TERMINAL ===================== -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">03 / INTERACTIVE</span>
+          <h2 class="section-title reveal-up" data-delay="0.1" data-scramble>Data Console</h2>
+          <p class="section-desc reveal-up" data-delay="0.2">An interactive peek into how I think. Type a command and hit Enter.</p>
+        </div>
+        <div class="terminal reveal-up" data-delay="0.3">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="terminal-title">hari@portfolio:~</span>
+            <div class="terminal-status">
+              <span class="terminal-status-dot"></span>
+              <span>connected</span>
+            </div>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="terminal-output" id="terminalOutput">
+              <p><span class="term-green">hari@portfolio</span>:<span class="term-blue">~</span>$ welcome</p>
+              <p class="term-dim">Type a command below. Try: <span class="term-accent">help</span>, <span class="term-accent">about</span>, <span class="term-accent">projects</span>, <span class="term-accent">skills</span>, <span class="term-accent">run analysis</span></p>
+            </div>
+            <div class="terminal-input-line">
+              <span class="term-green">hari@portfolio</span>:<span class="term-blue">~</span>$&nbsp;
+              <input type="text" class="terminal-input" id="terminalInput" placeholder="type a command..." autocomplete="off" spellcheck="false" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">04 / SKILLS</span>
+          <h2 class="section-title reveal-up" data-delay="0.1" data-scramble>My Toolkit</h2>
+        </div>
+        <div class="skills-orbit reveal-up" data-delay="0.2" id="skillsOrbit">
+          <div class="orbit-center">
+            <span>DATA</span>
+            <div class="orbit-pulse"></div>
+          </div>
+          <div class="orbit-ring orbit-ring-1">
+            <div class="orbit-item" style="--angle: 0deg;">Python</div>
+            <div class="orbit-item" style="--angle: 72deg;">SQL</div>
+            <div class="orbit-item" style="--angle: 144deg;">Power BI</div>
+            <div class="orbit-item" style="--angle: 216deg;">Excel</div>
+            <div class="orbit-item" style="--angle: 288deg;">Pandas</div>
+          </div>
+          <div class="orbit-ring orbit-ring-2">
+            <div class="orbit-item" style="--angle: 36deg;">Machine Learning</div>
+            <div class="orbit-item" style="--angle: 108deg;">Scikit-learn</div>
+            <div class="orbit-item" style="--angle: 180deg;">TensorFlow</div>
+            <div class="orbit-item" style="--angle: 252deg;">NLP</div>
+            <div class="orbit-item" style="--angle: 324deg;">Deep Learning</div>
+          </div>
+          <div class="orbit-ring orbit-ring-3">
+            <div class="orbit-item" style="--angle: 18deg;">HTML/CSS</div>
+            <div class="orbit-item" style="--angle: 90deg;">JavaScript</div>
+            <div class="orbit-item" style="--angle: 162deg;">FastAPI</div>
+            <div class="orbit-item" style="--angle: 234deg;">Git</div>
+            <div class="orbit-item" style="--angle: 306deg;">Streamlit</div>
+          </div>
+        </div>
+        <!-- Fallback grid for mobile -->
+        <div class="skills-grid reveal-up" data-delay="0.3">
+          <div class="skill-chip">Python</div>
+          <div class="skill-chip">SQL</div>
+          <div class="skill-chip">Power BI</div>
+          <div class="skill-chip">Excel</div>
+          <div class="skill-chip">Pandas</div>
+          <div class="skill-chip">Machine Learning</div>
+          <div class="skill-chip">Scikit-learn</div>
+          <div class="skill-chip">TensorFlow</div>
+          <div class="skill-chip">NLP</div>
+          <div class="skill-chip">Deep Learning</div>
+          <div class="skill-chip">HTML/CSS</div>
+          <div class="skill-chip">JavaScript</div>
+          <div class="skill-chip">FastAPI</div>
+          <div class="skill-chip">Git</div>
+          <div class="skill-chip">Streamlit</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">05 / EXPERIENCE</span>
+          <h2 class="section-title reveal-up" data-delay="0.1" data-scramble>Where I've Worked</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal-up" data-delay="0.2">
+            <div class="timeline-marker">
+              <div class="timeline-marker-pulse"></div>
+            </div>
+            <div class="timeline-content tilt-card">
+              <div class="card-glow"></div>
+              <span class="timeline-date">2024 – 2025</span>
+              <h3>Virtual Experience Programs</h3>
+              <h4>Tata Group & Deloitte (Forage)</h4>
+              <p>Completed data visualization and analytics simulation programs, working on enterprise-level analytical challenges and presenting insights to stakeholders.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal-up" data-delay="0.3">
+            <div class="timeline-marker">
+              <div class="timeline-marker-pulse"></div>
+            </div>
+            <div class="timeline-content tilt-card">
+              <div class="card-glow"></div>
+              <span class="timeline-date">2025</span>
+              <h3>Freelance Web Developer</h3>
+              <h4>Mr. Decorative</h4>
+              <p>Building a professional business website for a decorative products company — handling design, development, and deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">06 / ACHIEVEMENTS</span>
+          <h2 class="section-title reveal-up" data-delay="0.1" data-scramble>Beyond The Code</h2>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card tilt-card reveal-up" data-delay="0.2">
+            <div class="card-glow"></div>
+            <div class="achievement-icon">🏅</div>
+            <h3>Hackathon Competitor</h3>
+            <p>Participated in multiple hackathons, building innovative solutions under time pressure and collaborating with diverse teams.</p>
+            <div class="card-corner card-corner-tl"></div>
+            <div class="card-corner card-corner-br"></div>
+          </div>
+          <div class="achievement-card tilt-card reveal-up" data-delay="0.3">
+            <div class="card-glow"></div>
+            <div class="achievement-icon">🥇</div>
+            <h3>State-Level Sports Medalist</h3>
+            <p>Competed and medaled at state-level sports competitions, demonstrating discipline, resilience, and peak performance under pressure.</p>
+            <div class="card-corner card-corner-tl"></div>
+            <div class="card-corner card-corner-br"></div>
+          </div>
+          <div class="achievement-card tilt-card reveal-up" data-delay="0.4">
+            <div class="card-glow"></div>
+            <div class="achievement-icon">👑</div>
+            <h3>School Prefect & Sports Captain</h3>
+            <p>Led as school prefect and sports captain — managing teams, organizing events, and developing leadership at a young age.</p>
+            <div class="card-corner card-corner-tl"></div>
+            <div class="card-corner card-corner-br"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESUME ===================== -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <div class="resume-cta reveal-up">
+          <h2 data-scramble>Want the full picture?</h2>
+          <p>Download my resume for a detailed overview of my skills, experience, and projects.</p>
+          <a href="#" class="btn btn-glow magnetic" data-hover data-cursor-text="↓" id="resumeBtn">
+            <span class="btn-text">Download Resume</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span class="btn-fill"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <span class="section-tag reveal-up">07 / CONTACT</span>
+          <h2 class="contact-title reveal-up" data-delay="0.1">Let's build something<br/><span class="text-accent">impactful.</span></h2>
+          <p class="contact-sub reveal-up" data-delay="0.2">Have a project in mind, a dataset that needs exploring, or just want to connect? I'm always open to new opportunities and conversations.</p>
+          <div class="contact-links reveal-up" data-delay="0.3">
+            <a href="mailto:harikishan4763@gmail.com" class="contact-link magnetic" data-hover data-cursor-text="MAIL">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">harikishan4763@gmail.com</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a href="https://github.com/HarryInData" target="_blank" rel="noopener" class="contact-link magnetic" data-hover data-cursor-text="CODE">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">HarryInData</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/hari-kishan-singh-720540397" target="_blank" rel="noopener" class="contact-link magnetic" data-hover data-cursor-text="LINK">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">Hari Kishan Singh</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© 2026 Hari Kishan Singh</span>
+        <span class="footer-built">Crafted with precision & passion</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
