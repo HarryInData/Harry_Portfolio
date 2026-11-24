@@ -1,0 +1,254 @@
+{
+  "profile": {
+    "name": "Hari Kishan Singh",
+    "headline": "Data Analyst · Python · Data Science Enthusiast · BCA Student",
+    "location": "Delhi, India",
+    "about": "Aspiring Data Analyst and Data Science enthusiast with a strong foundation in Python, data analysis, and machine learning. Currently pursuing a BCA at IMS Ghaziabad while building hands-on expertise through real-world projects, hackathons, and job simulations. I turn raw data into dashboards, models, and stories that help people decide.",
+    "avatar": "/avatar.png",
+    "email": "",
+    "instagram": "https://instagram.com/harry_build.py",
+    "linkedin": "https://www.linkedin.com/in/hari-kishan-singh-720540397",
+    "github": "https://github.com/HarryInData",
+    "education": "BCA, Computer Engineering · IMS Ghaziabad (University Courses Campus) · 2025–2028"
+  },
+  "resumeUrl": null,
+  "projects": [
+    {
+      "id": "teamfit",
+      "title": "TeamFit AI",
+      "description": "Student collaboration platform with real-time coding, keystroke-based contribution tracking, and AI performance insights. Built in 24 hours at the ShubhShastra Hackathon (HackShastra, Subharti University).",
+      "stack": ["React", "Flask", "PostgreSQL", "JWT", "Groq AI", "Vercel"],
+      "github": "https://github.com/HarryInData/TeamFit-Ai",
+      "demo": "https://team-fit-ai.vercel.app",
+      "featured": true
+    },
+    {
+      "id": "churn",
+      "title": "Customer Churn Prediction",
+      "description": "Predicts at-risk customers from historical data. Includes preprocessing, EDA, feature engineering, logistic regression and decision trees, evaluated with accuracy and ROC-AUC.",
+      "stack": ["Python", "Pandas", "scikit-learn", "Matplotlib"],
+      "github": "https://github.com/HarryInData/customer_churn-prediction",
+      "featured": true
+    },
+    {
+      "id": "gst-ai",
+      "title": "GST AI / InsightAi",
+      "description": "Data analysis platform that turns large datasets into summary reports and interactive dashboards.",
+      "stack": ["TypeScript", "Python", "Dashboards"],
+      "github": "https://github.com/HarryInData/GST_Ai",
+      "featured": true
+    },
+    {
+      "id": "mentor",
+      "title": "AI Friend Mentor",
+      "description": "Conversational AI buddy for interviews, daily tasks, and study help. Free stack with Streamlit, Hugging Face, and Render.",
+      "stack": ["Python", "Streamlit", "Hugging Face"],
+      "github": "https://github.com/HarryInData/harry-ai-friend-mentor",
+      "featured": true
+    },
+    {
+      "id": "vector",
+      "title": "Vector Memory Workshop",
+      "description": "Python retrieval demo using embeddings, cosine similarity, and a local JSON knowledge store.",
+      "stack": ["Python", "Embeddings", "Machine Learning"],
+      "github": "https://github.com/HarryInData/vecter_memory",
+      "featured": true
+    },
+    {
+      "id": "firstlook",
+      "title": "firstlook-repo",
+      "description": "Offline CLI that creates an evidence-based orientation guide for unfamiliar code repositories.",
+      "stack": ["Python", "CLI"],
+      "github": "https://github.com/HarryInData/firstlook-repo",
+      "featured": false
+    },
+    {
+      "id": "commitdesk",
+      "title": "Commit Desk",
+      "description": "Web app for tracking commits and developer workflow.",
+      "stack": ["JavaScript", "Vercel"],
+      "github": "https://github.com/HarryInData/commit_Desk",
+      "demo": "https://commitdesk-dun.vercel.app",
+      "featured": false
+    },
+    {
+      "id": "techyuva",
+      "title": "Tech Yuva",
+      "description": "Event / campus tech site.",
+      "stack": ["CSS", "Web"],
+      "github": "https://github.com/HarryInData/Tech_Yuva",
+      "demo": "https://tech-yuva-azure.vercel.app",
+      "featured": false
+    },
+    {
+      "id": "businessflow",
+      "title": "BusinessFlow",
+      "description": "TypeScript business workflow project.",
+      "stack": ["TypeScript"],
+      "github": "https://github.com/HarryInData/BusinessFlow",
+      "featured": false
+    },
+    {
+      "id": "emotion",
+      "title": "Emotion Aware Encryption",
+      "description": "Python project exploring emotion-aware encryption.",
+      "stack": ["Python"],
+      "github": "https://github.com/HarryInData/Emotion_Aware_Encryption1",
+      "featured": false
+    },
+    {
+      "id": "clara",
+      "title": "Clara Personal Assistant",
+      "description": "Python personal assistant experiment.",
+      "stack": ["Python"],
+      "github": "https://github.com/HarryInData/Clara_personal_assistence",
+      "featured": false
+    },
+    {
+      "id": "salary",
+      "title": "Cognetix Employee Salary Analysis",
+      "description": "Salary dataset analysis with Python.",
+      "stack": ["Python", "Pandas"],
+      "github": "https://github.com/HarryInData/Cognetix_Employee_Salary_Analysis",
+      "featured": false
+    },
+    {
+      "id": "antique",
+      "title": "Antique Arts Sourcing",
+      "description": "TypeScript sourcing platform for antique arts.",
+      "stack": ["TypeScript"],
+      "github": "https://github.com/HarryInData/Antique-_Arts_Sourcing",
+      "featured": false
+    },
+    {
+      "id": "sarvam",
+      "title": "Sarvam AI",
+      "description": "Applied AI experiment with Python.",
+      "stack": ["Python", "Generative AI"],
+      "github": "https://github.com/HarryInData/Sarvam_AI",
+      "featured": false
+    },
+    {
+      "id": "autoclip",
+      "title": "Auto Clip",
+      "description": "Python tooling for clip automation.",
+      "stack": ["Python"],
+      "github": "https://github.com/HarryInData/auto_clip",
+      "featured": false
+    },
+    {
+      "id": "patient",
+      "title": "Patient Case Tracking AI",
+      "description": "AI system for tracking patient cases.",
+      "stack": ["Python"],
+      "github": "https://github.com/HarryInData/AI_system_Patient_case_tacking",
+      "featured": false
+    },
+    {
+      "id": "student",
+      "title": "Student Analysis",
+      "description": "Basic student behaviour analysis from marks and grades.",
+      "stack": ["HTML", "Data Analysis"],
+      "github": "https://github.com/HarryInData/Student_Ananlysis",
+      "featured": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "analysis",
+      "category": "Data Analysis & Visualization",
+      "items": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Tableau", "Excel"]
+    },
+    {
+      "id": "ml",
+      "category": "Machine Learning & AI",
+      "items": ["scikit-learn", "Generative AI", "EDA", "Logistic Regression", "Decision Trees", "Embeddings"]
+    },
+    {
+      "id": "db",
+      "category": "Database & SQL",
+      "items": ["MySQL", "PostgreSQL", "Query optimization", "Data management"]
+    },
+    {
+      "id": "eng",
+      "category": "Software & Tools",
+      "items": ["Flask", "React", "Vite", "TypeScript", "Git/GitHub", "Jupyter", "PyCharm", "Streamlit"]
+    },
+    {
+      "id": "soft",
+      "category": "Soft Skills",
+      "items": ["Problem-solving", "Communication", "Team collaboration", "Data storytelling"]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "deloitte",
+      "title": "Deloitte Australia Data Analytics Job Simulation",
+      "issuer": "Deloitte · Forage",
+      "date": "Dec 2025",
+      "url": "https://www.linkedin.com/in/hari-kishan-singh-720540397"
+    },
+    {
+      "id": "tata",
+      "title": "Tata iQ Data Science Job Simulation",
+      "issuer": "Tata · Forage",
+      "date": "Dec 2025",
+      "url": "https://www.linkedin.com/in/hari-kishan-singh-720540397"
+    },
+    {
+      "id": "ibm-ds",
+      "title": "What is Data Science?",
+      "issuer": "IBM · Coursera",
+      "date": "Feb 2026",
+      "credentialId": "N4JAD388SJZR",
+      "url": "https://coursera.org/account/accomplishments/records/N4JAD388SJZR"
+    },
+    {
+      "id": "google-arcade",
+      "title": "Arcade Trail: Data Engineering and Information Protection",
+      "issuer": "Google",
+      "date": "Jun 2026",
+      "url": "https://www.linkedin.com/in/hari-kishan-singh-720540397"
+    },
+    {
+      "id": "google-ml",
+      "title": "Prepare Data for ML APIs on Google Cloud",
+      "issuer": "Google Cloud",
+      "date": "2026",
+      "url": "https://www.linkedin.com/in/hari-kishan-singh-720540397"
+    },
+    {
+      "id": "kickr",
+      "title": "1st Runner-Up · KICKR CodeMania",
+      "issuer": "KICKR Hackathon",
+      "date": "2026",
+      "url": "https://www.linkedin.com/in/hari-kishan-singh-720540397"
+    }
+  ],
+  "experience": [
+    {
+      "id": "deloitte-exp",
+      "role": "Data Specialist · Job Simulation",
+      "org": "Deloitte Australia",
+      "period": "Dec 2025",
+      "bullets": [
+        "Designed interactive Tableau dashboards for business intelligence.",
+        "Performed forensic data analysis to find patterns and anomalies.",
+        "Used Excel and Python for classification, trends, and data-driven conclusions."
+      ]
+    },
+    {
+      "id": "tata-exp",
+      "role": "Data Specialist · Job Simulation",
+      "org": "Tata iQ",
+      "period": "Dec 2025",
+      "bullets": [
+        "Ran EDA with GenAI tools to assess data quality and risk indicators.",
+        "Proposed a no-code predictive framework for customer delinquency risk.",
+        "Designed an AI-driven collections strategy with ethics and compliance in mind."
+      ]
+    }
+  ],
+  "gallery": [],
+  "music": []
+}
